@@ -1,1 +1,13 @@
-/.metadata/
+# 메타데이터가 불필요하게 커밋되는 것을 방지
+
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
