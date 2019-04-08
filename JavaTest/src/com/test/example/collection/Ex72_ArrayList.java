@@ -1,4 +1,4 @@
-package com.test.example.collection;
+﻿package com.test.example.collection;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -109,10 +109,10 @@ public class Ex72_ArrayList {
 		//회원 정보 > list > loop > Member > getXXX()
 		for (Member m : list) {
 			System.out.printf("%s\t%6s\t%s\t%s\n"
-								, m.getName()
-								, m.getAge()
-								, m.getTel()
-								, m.getAddress());
+				, m.getName()
+				, m.getAge()
+				, m.getTel()
+				, m.getAddress());
 		}
 		
 		//삭제할 회원 입력
@@ -147,10 +147,10 @@ public class Ex72_ArrayList {
 			
 			if (m.getName().indexOf(keyword) > -1) {
 				System.out.printf("%s\t%6s\t%s\t%s\n"
-									, m.getName()
-									, m.getAge()
-									, m.getTel()
-									, m.getAddress());
+						, m.getName()
+						, m.getAge()
+						, m.getTel()
+						, m.getAddress());
 			}
 		}
 		
@@ -169,10 +169,10 @@ public class Ex72_ArrayList {
 		//회원 정보 > list > loop > Member > getXXX()
 		for (Member m : list) {
 			System.out.printf("%s\t%6s\t%s\t%s\n"
-								, m.getName()
-								, m.getAge()
-								, m.getTel()
-								, m.getAddress());
+					, m.getName()
+					, m.getAge()
+					, m.getTel()
+					, m.getAddress());
 		}
 		
 		System.out.println("출력 완료");
@@ -225,17 +225,3 @@ public class Ex72_ArrayList {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
