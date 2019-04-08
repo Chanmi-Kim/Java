@@ -1,16 +1,16 @@
 
-public class MyArrayList {
+public class _01_MyArrayList {
 	
 	private String[] list; // 데이터 저장소
 	private int index = 0; // 현재 접근할 방의 번호
 	private int capacity = 0;
 	
 	// 생성자 선언
-	public MyArrayList() {
+	public _01_MyArrayList() {
 		this(4);
 	}
 	
-	public MyArrayList(int initialCapacity) {
+	public _01_MyArrayList(int initialCapacity) {
 		this.capacity = initialCapacity;
 	}
 	

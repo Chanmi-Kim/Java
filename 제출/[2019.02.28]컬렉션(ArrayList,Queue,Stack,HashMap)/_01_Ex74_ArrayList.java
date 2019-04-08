@@ -1,6 +1,6 @@
 import example.MyArrayList;
 
-public class Ex74_ArrayList {
+public class _01_Ex74_ArrayList {
 	public static void main(String[] args) {
 		
 		// 배열 생성
