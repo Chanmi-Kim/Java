@@ -1,4 +1,4 @@
-package com.test.example.collection;
+﻿package com.test.example.collection;
 
 import java.util.ArrayList;
 
@@ -27,11 +27,8 @@ public class Ex73_ArrayList {
 		list.add(101);
 		
 		list.trimToSize();
-		
-		
-		
-	}
 	
+	}	
 }
 
 
@@ -45,26 +42,4 @@ public class Ex73_ArrayList {
 //	}
 //	
 //}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
