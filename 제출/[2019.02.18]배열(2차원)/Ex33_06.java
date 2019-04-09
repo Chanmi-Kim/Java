@@ -1,4 +1,23 @@
-﻿import java.io.BufferedReader;
+﻿/*
+  
+작성자 : xxHANIxx
+작성일자 : 2019.02.18.
+
+요구사항 6. 아래와 같이 출력하시오.
+
+출력]
+    1    2    4    7   11
+    3    5    8   12   16
+    6    9   13   17   20
+   10   14   18   21   23
+   15   19   22   24   25
+   
+추가조건]
+- 테이블의 행/열을 입력받아 출력한다.
+
+*/
+
+import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class Ex33_06 {
