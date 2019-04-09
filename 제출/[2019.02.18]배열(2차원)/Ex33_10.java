@@ -1,4 +1,35 @@
-﻿import java.io.BufferedReader;
+﻿/*
+  
+작성자 : xxHANIxx
+작성일자 : 2019.02.18.
+
+요구사항 10. 아래와 같이 출력하시오.
+
+입력]
+국어 점수 : 80
+영어 점수 : 50
+수학 점수 : 70
+
+출력]
+ □	 □	 □
+ □	 □	 □
+ ■	 □	 □
+ ■	 □	 ■
+ ■	 □	 ■
+ ■	 ■	 ■
+ ■	 ■	 ■
+ ■	 ■	 ■
+ ■	 ■	 ■
+ ■	 ■	 ■
+--------------------
+국어	영어	수학
+   
+조건]
+- String[][] score = new String[10][3];
+
+*/
+
+import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class Ex33_10 {
