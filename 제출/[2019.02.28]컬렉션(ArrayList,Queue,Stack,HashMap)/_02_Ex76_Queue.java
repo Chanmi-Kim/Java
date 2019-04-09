@@ -19,7 +19,7 @@ public class _02_Ex76_Queue {
 		System.out.println();
 		
 		//개수
-		System.out.println("배열 안의 값의 개수는 : " + queue.size() + "개");
+		System.out.println(queue.size());
 		System.out.println();
 		
 		//확인
@@ -30,14 +30,10 @@ public class _02_Ex76_Queue {
 		
 		//크기 조절
 		queue.trimToSize();
-		System.out.println(queue);
-		System.out.println();
 		
 		//초기화
 		queue.clear();
 		System.out.println(queue.size());
-		System.out.println(queue);
-		System.out.println();
 		
 	}
 }
