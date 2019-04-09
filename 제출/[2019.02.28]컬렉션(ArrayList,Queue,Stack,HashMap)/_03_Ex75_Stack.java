@@ -11,17 +11,12 @@ public class _03_Ex75_Stack {
 		stack.push("파랑");
 		stack.push("주황");
 		stack.push("검정");
-		
-		System.out.println(stack);
 		System.out.println();
 
 		//읽기
 		System.out.println(stack.pop());	
 		System.out.println(stack.pop());	
-		System.out.println(stack.pop());	
-		System.out.println(stack.pop());	
-		
-		System.out.println(stack);
+		System.out.println(stack.pop());		
 		System.out.println();
 
 		//개수
@@ -34,7 +29,6 @@ public class _03_Ex75_Stack {
 
 		//크기 조절
 		stack.trimToSize();
-		System.out.println(stack);
 		System.out.println();
 
 		//초기화
