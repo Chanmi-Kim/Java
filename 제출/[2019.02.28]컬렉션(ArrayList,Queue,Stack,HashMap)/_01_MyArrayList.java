@@ -21,16 +21,19 @@ public class _01_MyArrayList {
 		// 1) 배열이 없을 때 (처음 add 할 때)
 		if (this.list == null) { // 첫 add()
 			this.list = new String[this.capacity];
+			this.index++;
 		}
 		
 		// 2) 배열 공간이 없어서 공간을 추가해야 할 때
 		doubling();
 		
 		// 3) 배열의 맨 끝에 요소 추가
-		this.list[index] = value;
-		this.index++;
-		System.out.println(this.index);
-		
+		for (int i=0; i<list.length; i++) {
+			if(this.list[i] == null) {
+				this.list[index] = value;
+				this.index++;
+			}
+		}
 	}
 	
 	private void doubling() {
@@ -79,7 +82,7 @@ public class _01_MyArrayList {
 	public int size() {
 		// 요소의 개수를 반환한다.
 		// return : 요소의 개수
-		
+
 		return this.index;
 	}
 	
@@ -100,11 +103,13 @@ public class _01_MyArrayList {
 		// index : 삭제할 요소의 위치		
 		
 		//Red, 파랑, 노랑, 검정, 하하하, null, null, null,
-		for (int i=index; i<this.index-1; i++) { // Q. 왜 index-1까지지
+		for(int i= this.index-1; i>=0; i--) {
+
 			this.list[i] = this.list[i+1];
+			this.index--;
+
 		}
 		
-		this.index--;
 	}
 	
 	public void add(int index, String value) {
@@ -117,6 +122,7 @@ public class _01_MyArrayList {
 		//Red, 파랑, 노랑, 검정, 하하하, null, null, null,
 		for (int i=this.index-1; i>=index; i--) { // 원하는 위치
 			this.list[i+1] = this.list[i]; // 왼쪽에서 오른쪽으로 
+			
 		}
 		
 		this.list[index] = value;
@@ -169,6 +175,10 @@ public class _01_MyArrayList {
 		// 배열의 모든 요소를 삭제한다.
 		
 		//for -> i -> null
+		for(int i=0; i<this.index; i++) {
+			this.list[i] = "";	
+		}
+		
 		this.index = 0;
 	}
 	
