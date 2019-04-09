@@ -20,32 +20,29 @@ public class Ex28_11 {
 
 	public static void primeNumber() {
 
-		for (int i = 2; i < 100; i++) {
+		String txt = "";
 
-			for (int j = 2; j < i; j++) {
+		for (int i = 2; i <= 100; i++) {
 
-				if (i % j != 0) {
+			int count = 0;
 
-					System.out.printf("%d", i);
+			for (int j = 2; j <= i; j++) {
 
-					if (j < i) {
-
-						System.out.print(", ");
-						break;
-
-					} else {
-
-						System.out.print(" ");
-						break;
-
-					}
-
-				} else {
-					break;
+				if (i % j == 0) {
+					count++;
 				}
-
 			}
 
+			if (count == 1) {
+				txt += i;
+
+				if (i >= 90) {
+					break;
+				} else {
+					txt += ", ";
+				}
+			}
 		}
+		System.out.println(txt);
 	}
 }
